@@ -1,0 +1,4 @@
+After uppercase letters - skip ahead by its ascii value - 60 positions
+After lowercase letters - skip ahead by its ascii value - 90 positions
+After numbers - skip ahead by itsascii value - 40 positions
+After anything else - skip ahead +1 if ascii value is odd, +2 if acsii value is even

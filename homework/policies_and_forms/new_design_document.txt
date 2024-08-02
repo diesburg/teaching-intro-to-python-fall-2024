@@ -1,0 +1,22 @@
+Sarah Diesburg
+
+Design Document for program numberCounter.py
+
+General Description: This program determines the number of digits D inside a larger number N.
+
+Inputs: A large number N and a small digit D.  The number N
+is checked to be sure it is a number and positive.  The digit
+D is checked to be a number between 0 and 9 inclusive.
+
+Algorithm: 
+	* Set a counter to zero.
+	* For each digit D in the number N:
+		* Look at the last digit in N (using %)
+		* Increment the counter every time we see a digit
+		  that equals our target value
+		* Shrink N by one digit (using //)
+		* Repeat until there are no more digits to look at 
+		  in N.
+
+Outputs: Prints number of digit D that can be found in number N.
+

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HW10</title>
+<link href="../course.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Homework  #9</h1>
+<h3>Due on the Friday before Thanksgiving at 11:59pm. No late days.</h3>
+<p>&nbsp;</p>
+
+
+	<hr>
+	
+	<h3>Introduction</h3>
+<p>We can do a lot of really neat things with data files that we find on the Internet.  I found a real, interesting data file about the registered dogs in New York City (NYC)!</p>
+
+<p>To get started you should download the following file by right-clicking on it and clicking "save as" or "save link as":</p>
+<ul>
+  <li><a href="dogs_of_NYC.txt">dogs_of_NYC.txt</a></li>
+</ul>
+
+	<p>This file is fairly large but it contains some a list of data for dogs registered in New York City. (It may take awhile for your computer to load it in a text editor because it is so large!)  Notice that the file has data seperated by tabs (not commas or spaces).  This is new to us, but many data files are stored this way.  Note that when you use the .split() method later in your code, you will want to split on tabs like this:<br><br>
+	lineList = line.split("\t")
+	
+	</p>
+	
+	<p>&nbsp; </p>
+	<hr>
+    <h3>Specifics </h3>
+    <p>In this assignment you will make several functions. You can make more functions than the ones listed below to "help" in your implementation, but keep in mind that the program submission system is expecting to see and call the 3 functions below.</p>
+    <p>In a file called: <strong>PA09.py</strong></p>
+    
+	<p>1) Create a funciton called: <strong>topTenNames() </strong></p>
+	<ul>
+	<li> This function should open the dogs_of_NYC.txt file, read it line by line, and use a dictionary to store each dog name and the frequency it occurs.  It should then sort the results by the frequency and print out the top ten.  For example:</li>
+  
+	<p><img src="01.JPG"></p>
+  
+	<p>Ok, that was fun, but what about the top male and female names?</p>
+	</ul>
+  
+	<p>2) Create a function called: <strong>topTenNamesGender()</strong></p>
+	<ul>
+	<li> This function takes in a "M" or "F" argument that specifies if you want male or female names.  Your function should then only create a dictionary for the selected gender, sort the results by the frequence, and print out the top ten.  For example:</li>
+  
+	<p><img src="02.JPG"></p>
+  
+		<p>Now you are contacted by the dog shelters in NYC.  They are advocating the policy of spaying/neutering dogs, and they want to know which dog breeds tend to have the highest percentage of spayed/neutered dogs.</p>
+	</ul>
+   
+    <p>3) Create a function called: <strong>spayedDogs()</strong></p>
+<p>This function should:</p>
+    <ul>
+		<li>Print out the top ten percentages and breeds of dogs that are spayed/neutered.  You really have to keep two data structures to solve this question:<ul><li>A dictionary of breed to total dogs of that breed</li><li>A dictionary of breed to total <b>spayed/neutered</b> dogs of that breed</li></ul></li>
+		<p><img src="03.JPG"></p>
+	</ul>
+        
+
+    <p>Note: This turns out to be a great wrap up of lists, dictionaries, and functions. It uses a nice mixture of all of the topics we have studied in the class. When you are done you will likely be surprised at how small the code is. But it is very likely that this will take you longer than you would like. To save yourself some time we strongly suggest you sit down and work through the code on paper/pencil first. Think about all of the information that needs to be gathered, how it is gathered, how it is stored, and how it is processed.</p>
+<hr>
+<h3>Final Submission</h3>
+	<p>Please upload your program to the program submission system.  The program is worth 25 points. The program submission system will be running your three functions individually.</p>
+
+
+
+</body>
+</html>

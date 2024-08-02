@@ -1,0 +1,65 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Programming Assignment</title>
+<style>
+
+</style>
+</head>
+
+
+	<body>
+
+<p align="center"><b>
+<span style="font-size: 18.0pt">Intro to Computer Science</span></b></p>
+
+<p align="center"><b>
+<span style="font-size: 18.0pt">Programming Assignment 10&nbsp;</span></b></p>
+<h3 align="center">Writing code to crack the "code"</h3>
+<p align="center"> Code due by the 12/2.  You can turn it in 2 days late for a penalty of 10% per late day.</p>
+
+
+<hr>
+<h3>Assignment Overview</h3>
+
+<p>You have been given an encoded copy of the <a href="mystery.txt">Lab 2 exam study guide here</a>, but <em><strong>how do you decrypt and read it</strong></em>???</p>
+		
+<p>Unlike regular encryption, this file has every plain letter/character you need to make sense of the study guide.  Unfortunately, there are also random characters in between each good character.  You will have to write code that will: <ul>
+		<li>Read a good character from the encoded file</li>
+		<li>Write that good character to an output file</li>
+		<li>Figure out how many bad characters to skip over until you get to the next good letter</li>
+		<li>Skip over those bad characters</li>
+		<li>Start the process over again until you reach the end of the file</li></ul>
+
+We can always assume that the first character of the file is a good character.</p>
+	
+<p>How do we figure out how many characters to skip?  Use this guide: <a href="hints.txt">hints.txt</a>.  We also know that the following file <a href="helloworld.txt">helloworld.txt</a> will decode to:<br><br>Hello world 1 2 3!!!</p>
+
+<p>In a file called pa10.py write a method called decode(inputfile,outputfile).&nbsp; 
+  Decode should take two parameters - both of which are strings.&nbsp; The first 
+  should be the name of an encoded file (either helloworld.txt or 
+  mystery.txt or yet another file that I might use to test 
+  your code).&nbsp; The second should be the name of a file that you will use as 
+  an output file.&nbsp; For example:</p>
+<p>&nbsp;&nbsp;&nbsp; decode(&quot;mystery.txt&quot; , &quot;translatedguide.txt&quot;)</p>
+<p>Your method should read in the contents of the inputfile and, using the 
+  scheme described in the hints.txt file above, decode the hidden message, writing to the outputfile as 
+it goes (or all at once when it is done depending on what you decide to use).</p>
+<p>Hint: Be sure to get the helloworld.txt file to decode before working on the large studyguide.</p>
+<p>Hint: Don't forget about while loops...</p>
+<p><b>Mac hint: use encoding="utf-8" in your file open functions, like this:
+	<pre>fin = open(input_file,"r",encoding="utf-8")</pre></b></p>
+<hr>
+  
+  <p align="left"><strong>Submitting your assignment</strong></p>
+<p>To upload your homework for grading, submit your program to the homework submission system.  It will give partial credit.  <br>Hint: First get capital letters working, then lowercase letters, then numbers, then everything else...</p>
+ 
+	<p>Congrats on submitting the last assignment of the semester!</p>
+  
+</body>
+
+</html>

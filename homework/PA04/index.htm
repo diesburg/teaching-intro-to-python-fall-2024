@@ -1,0 +1,77 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Programming Assignment #4</title>
+</head>
+
+<body>
+
+<p align="center"><b>
+<span style="font-size: 18.0pt">Intro to Computer Science</span></b></p>
+
+<p align="center"><b>
+<span style="font-size: 18.0pt">PA04</span></b></p>
+
+<h3 ALIGN="center">Latin Squares </h3>
+<HR>
+<p align="center"> <strong>Programs are due Wednesday at 11:59pm</strong>&nbsp;</p>
+<p align="center">You can submit up to 2 days late for a 10% penalty per day.</p>
+	<p align="center">Main program is worth 25 points.  Extra credit worth +4 points.</p>
+<hr>
+<p ALIGN="left"><b>Introduction</b></p>
+<p>The aim of this project is practice the use of for loops, while loops, and conditional 
+statements within a project that is a little bit bigger than ones you have been 
+working on.&nbsp; This will give you some practice with program development.&nbsp; Take the time to really think about this 
+problem and work through the process before you begin to code.&nbsp; Write small 
+snippets of code to make sure you can perform smaller pieces of the assignment 
+rather than jumping in and writing the whole program at once.</p>
+
+<hr>
+<p><strong>Background</strong></p>
+<p align="left">A Latin Square is an n*n table filled with n different symbols in such a way that each symbol occurs exactly once in each row and exactly once in each column (see <a href="http://en.wikipedia.org/wiki/Latin_square">this link</a>). For example, two possible Latin Squares of order 6: </p>
+
+<p><img border="0" src="pic1.png" ></p>
+
+<p>The top-left numbers are 1 and 3 respectively. </p>
+
+
+<hr>
+<p ALIGN="left"><p><b>Project Description (squares.py)</b></p>
+<p>Your program will ask user to input two numbers. The first number is the order of square; the second one is the top-left number of the square. Note that the second number should be between 1 and the first number, so your program should check this situation. Then, your program will print the corresponding Latin Square. Here is some example output:<br>
+
+<img border="0" src="pic2.png" ></p>
+
+<p><b>Here are some hints:</b><br>
+1.	The range function and the % (modulus) operator are both useful for this project. <br>
+2.	How would you generate a sequence beginning with 1 of the appropriate order? A sequence of order 5 would be 1 2 3 4 5 <br>
+3.	How would you generate a sequence of the appropriate order beginning with a number other than 1? For a sequence of order 5 starting with 3 would be 3 4 5 1 2 <br>
+4.	How would you generate the second in the Latin sequence? For example, starting with 1 2 3 4 the next sequence would be 2 3 4 1</p>
+
+<p><b>Getting points for the project:</b><br>
+In this case, the autograder will award partial points for solutions that have some working components.  You will get some points for<ul>
+	<li>Printing the first line of the square starting when given the starting number 1 and counting up correctly to the order of the square.</li>
+	<li>Printing the first line of the square correct when given a different starting number than 1 and counting up/wrapping around correctly.</li>
+	<li>Printing the correct number of lines with the correct amount of numbers (even if all the numbers are not quite correct other than the first line)</li>
+  <li>Printing the correct Latin Square.</li>
+	</ul></p>
+	
+	<p><b>Warning:</b> If I see that you are trying to "hardcode" or print things in order to defeat the autograder, I reserve the right to deduct points.  I also reserve the right to deduct points if you leave off the program header and/or use bad programming style (such as picking bad variable names). 
+
+<hr>
+<p ALIGN="left"><p><b>Extra credit 4pts - add a loop to continue...</b></p>
+
+<p> Add a loop to your squares.py program to ask the user to continue.  For example:<br>
+
+<img border="0" src="pic3.png" ></p>
+
+<hr><p>
+<b>Final Submission</b></p>
+<p>Use the Program Submission System to submit your code.  <i>Note: you must submit the extra credit and regular versions of the code in the separate designated places!</i>  The autograder will not give you the extra credit if you submit the extra credit version to the regular submission spot.</p>
+
+</body>
+
+</html>

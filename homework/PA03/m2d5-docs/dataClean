@@ -1,0 +1,11 @@
+fin = open("capitals.csv","r")
+fout = open("capitals.txt","w",encoding="ascii")
+
+for x in fin:
+    print(x)
+    x = x.replace(u'\xa0', u' ')
+    x = x.replace('\u2013', u'-')
+    fout.write(x)
+
+fin.close()
+fout.close()

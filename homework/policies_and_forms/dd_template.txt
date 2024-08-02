@@ -1,0 +1,12 @@
+Name: <your names go here>
+
+Design Document for program <program name goes here>
+
+General Description: <fill in>
+
+Inputs: <fill in>
+
+Algorithm: <fill in>
+
+Outputs: <fill in>
+

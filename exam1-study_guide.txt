@@ -1,0 +1,71 @@
+Exam 1 Study Guide (Written Exam)
+---------------------------------
+- The written exam will be open-book, open-notes. (This means access to the zyBook and class websites are permitted.  Access to your own written or printed notes are permitted.  Going offsite to websites like StackOverflow are not permitted.)
+
+- The computers in SAB 102 do not have IDLE or Python installed.  You will not be able to actively type in Python code.
+
+- The exam will be TIMED TO 45 MINUTES during the Wednesday class period.  In the past, most people finish in a half hour.
+
+- If you cannot attend in person, please send me an email.
+
+- Don't forget the first week and a half of class before we started programming!  
+	- Review the vocabulary in the slides concerning how a computer works
+	- The parts of a computer
+	- Storage units of measure (bits, bytes, kilobytes, megabytes, gigabytes)
+	- How to convert from one unit of measure to another
+
+- Look through the class slides and zyBooks to be sure you know the vocabulary words.
+
+- Understand how to prompt the user for input using input().
+
+- Understand how to display results using print().
+
+- Understand the string, float, and int data types and how to convert from one type to another type.
+
+- How to use if, elif, and else.
+
+- How to use for loops and while loops.  
+
+- Know how the range() function works with a loop.  For example, what does this do:
+
+  for number in range(3,10,2):
+    print(number)
+
+- Be able to explain the difference in words between a for loop and a while loop. When would you use one over the other?
+
+- Know how string indexing works.  For example, what will my_string[0] give me?
+
+- Know how string slicing works.  For example, what will my_string[0:5] give me?  What about my_string[:9] or my_string[1:]?
+
+- Know how to use the + with two strings and the * with strings.  For example "hello" + "there", or "hello"*3.
+
+- Understand how to use a loop to go through a string, one character at a time.  For example:
+
+  for char in my_string:
+    print(char)
+
+- Be aware of the string methods we went over in class.  For example, how does my_string.lower() work?  How does my_string.find('a') work?
+
+
+Exam 1 Study Guide (Programming Exam)
+-------------------------------------
+- The programming exam will be closed book, closed notes during your lab time with the exception of one side of one sheet of paper for handwritten notes.
+
+- You can use one side of one sheet of paper for handwritten notes.  Why handwritten?  Studies show that writing something down (instead of copy/pasting) is a form of studying.
+
+- Go back to homeworks 1-3 and make sure you can do Python calculations and use if/elif/else correctly.
+
+- Homeworks 4 and 5 are too large to test.  Instead, look at the labs we did that week and try to resolve those lab problems.  Remember
+that you can download your previous lab solutions from the autolab to see if you are right.
+
+- Practice, practice, practice!  If a concept seems hard, try the zyBooks exercises over and over again for that concept.
+
+- This exam WILL NOT be autograded.  I will hand-grade all your submissions.  I will also give partial points for trying something, and the closer you get to the actual solution, the more points you will earn.
+
+- This also means that you must test your programs yourself and make sure they work.  (The autograder will not be there to test your programs.) 
+
+- The programs I ask you to write will be the size of the programs in homeworks 1-3.  You will not have to write a large program (like in homeworks 4-5).
+
+- If you encounter a program that is hard, skip it to do the ones you know you can do.  Come back to the hard one when you have time at the end.
+
+- Turn in something during the test, even if it doesn't work.  I award partial points.

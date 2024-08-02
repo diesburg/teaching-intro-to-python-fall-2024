@@ -1,0 +1,99 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Programming Assignment</title>
+</head>
+
+<body>
+
+<p align="center"><b>
+<span style="font-size: 18.0pt">Intro to Computer Science</span></b></p>
+
+<p align="center"><b>
+<span style="font-size: 18.0pt">Homework #6</span></b></p>
+<h3 align="center">CSV Files!</h3>
+<HR>
+<p align="center"> <strong>Code due by Monday, October 23rd at 11:59:59pm<br>
+  <br>
+  Late code may be submitted up to two days late for a penalty of 10% per day.</strong></p>
+<hr>
+
+	<h3>Introduction</h3>
+	<p>My friend is a really big geography buff.  He loves statistics about the various states and countries.  Recently we were having an interesting discussion about which states were the most and least populous by size.  That got us interested in calculating various popluation densities.  For this assignment you will write the code to answer this question.
+    
+</p>
+	<hr>
+    
+<h3><strong>Specifics</strong></h3>
+<p>In a file called: <strong>hw06.py</strong></p>
+<p>Create a program that should:</p>
+<ul>
+	<li><b>Ask for two inputs:</b>
+    <ul>
+      <li>Ask for the name of the input file.</li>
+      <li>Ask for the name of the output file that your code will produce.</li>
+    </ul>
+  </li>
+	<li><b>Prints:</b>
+    <ul>
+      <li>Nothing</li>
+    </ul>
+  </li>
+	<li><b>Actions:</b>
+    <ul>
+      <li>Opens the input file</li>
+      <li>Opens the output file</li>
+      <li>Pulls off the header and adds one more column labeled &quot;Density&quot;</li>
+      <li>For each territory provided in the data file you opened:
+        <ul>
+          <li>extract population and size</li>
+          <li>calculate population density (people per square area)</li>
+          <li>writes the original data PLUS the population density into the output csv file</li>
+        </ul>
+      </li>
+      <li>Closes both files</li>
+    </ul>
+  </li>
+	<li><b>Data files to use:</b>
+    <ul>
+      <li><a href="SmallData.csv">SmallData.csv</a></li>
+      <li><a href="StateData.csv">StateData.csv</a></li>
+      <li><a href="CountryData.csv">CountryData.csv</a></li>
+    </ul>
+  </li>
+
+	<li><b>Example run of the program:</b><br><br>
+		<img src="run.png" width="40%"><br>
+		Note: This means I need to be able to OPEN whatever file name I want.  Do NOT hardcode "StateData.csv" into your open call.  Instead, ask for a file name with input (say input_filename), and then open it in your program like this:<br><br>
+		fin = open(input_filename,"r")<br><br></li>
+	<li><b>Example output using the StateData.csv input file:</b><br><br>
+    <img src="densityResult.png" width="438" height="329"><br><br>
+    
+  </li>
+	<li><b>Example output using the StateData.csv input file in a text editor:</b><br><br>
+		<img src="text.png"><br><br></li>
+	
+</ul>
+	
+<hr>
+<h3>Troubleshooting</h3>
+	
+<p>Question #1: Python can't find the csv file.  What's wrong?</p>
+	<ul><li>Remember, for this class, I need you to put the files in the same folder as your python program.  Double check to make sure they are in the same folder.  If  you end up moving something around, you might want to close IDLE and restart IDLE to test it out.</li></ul>
+<p>Question #2: The autolab won't give me full points because the top line (header) of the state output file is a little different that the top line of the country output file.  How do I fix that?</p>
+	<ul><li>When you read the header of the input file, you can actually write that header back to the output file with a density column added on.  Notice how the headers in the state and country input files are a little different?</li></ul>
+<p>Question #3: Something else is wrong, and I'm having a hard time figuring out what that is.</p>
+	<ul><li>Hint: You may want to open the csv files with notepad or textedit to make sure things are right (e.g. you have commas where you need them, the data goes on multiple rows, etc.). </li></ul>
+<p>Question #4: I don't have Excel (or a spreadsheet reader program).  Can I still do this homework?</p>
+	<ul><li>Yes, you can still do this homework without a spreadsheet reader program.  Here is a <a href="https://uni.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1eec3782-0cc3-4673-b9c7-ac5900ff65bb">link</a> to an explanation video.</li></ul>
+	
+<hr><p>
+<b>Final Submission</b></p>
+<p>Use the program submission system to upload your code. </p>
+</body>
+
+</html>

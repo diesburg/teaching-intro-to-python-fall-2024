@@ -1,0 +1,205 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="File-List" href="index_files/filelist.xml">
+
+<title>Programming Assignment 8</title>
+
+</head>
+
+<body>
+
+<h1 align="center"><b>
+<span style="font-size: 18.0pt">Programming Assignment 8</span></b></h1>
+
+<h3 ALIGN="center">Tracking the Greats of the NBA</h3>
+<hr>
+<p align="center"> <strong>Code due by Wednesday </strong></p>
+
+<p align="center">Can sbmit up to two days late for 10% penalty per day </p>
+<hr>
+<h4>Helpful Links</h4>
+<ul>
+	
+	<li><a href="https://uni.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=458786c6-253b-49cf-b641-add700f253b7">HW #8 Intro Video</a></li>
+	<li><a href="https://uni.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2308bdc4-e8b5-4c1a-bcb9-add700f1dd4e">How do I make the points list?</a></li>
+	
+</ul>	
+	<hr>
+	<h4>General Description</h4>
+<p> The purpose of this assignment is to give you more practice with functions, files, and lists while using a real data set populated
+with career data from NBA players! </p>
+<p> Remember, before you begin this project, review the <a href="../../sessions/s25/RPS.py">function commenting styles</a>
+that I expect.  <b>This includes comments specifying inputs/outputs and the descriptive docstring.</b>  Please create the function comments <b>before</b> beginning the actual
+coding.&nbsp;&nbsp;  </p>
+<p>Even though this program contains multiple functions you should write, the autolab will grade what is printed out when the main() function is called.  That means, if you haven't yet implemented the main() function, the autolab won't be able to test your code.  It also gives you a little bit of freedom in how you implement the other functions, as long as the right stuff gets printed out with main().</p>
+	<p><b>This is a big assignment!  Start early!</b></p>
+<hr>
+<h3>Getting Started</h3>
+<p>Download this csv file:</p>
+<ol start="1" type="1" style="margin-bottom: 0in">
+  <li><a href="player_career.csv">player_career.csv</a></li>
+</ol>
+	
+<p><b>Note: Use the following command to open this file in your program:</b><br><br>fin=open("player_career.csv","r",encoding="utf-8")</p>
+	
+<p>What is this file?  The format of this file is easy to understand. Open the file by right 
+  clicking on the file and selecting &quot;Open With&quot; and selecting a text editor of 
+  some kind like textedit or notepad.&nbsp; The first line tells you the names of all 
+  the columns (To understand the meanings of each of the abbreviations, look at <a href="abbreviations.html">this page</a>).&nbsp;
+  After that, each 
+  line's data corresponds to one player's career statistics. Each field is 
+  separated by a comma.&nbsp;&nbsp;&nbsp; </p>
+
+<hr>
+<h3>Your Assignment, Part 1</h3>
+<ol start="1" type="1" style="margin-bottom: 0in">
+  <li class="MsoNormal">Begin by creating a file called pa09.py.</li>
+  <li class="MsoNormal">In this file create a function called readData().&nbsp; This 
+  function should:
+  
+  <ul type="circle" style="margin-bottom: 0in">
+    <li class="MsoNormal">take in a single parameter that is the file name you want to read.</li>
+    <li class="MsoNormal">open the file.</li>
+    <li class="MsoNormal">each line in this data file should be read as a list, and then each line 
+	list should be then appended to a master data list. </li>
+
+	<li>return the master data list, which is a list of line lists.  (In other 
+    words, you should return a list of length 4051.&nbsp; Each element in the list is 
+    itself a list representing the career stats of a single player)</li>
+	  <li>the function should look something like this:<br><br><img src="01.png"><br></li>
+	  <li><i>Note: If you try to print this master_data_list, it is so big that the print buffer may eat up all your memory and stall your program.  To make sure you are creating the list right, make a copy of the input file and delete all but the first 10 lines in notepad or textedit. Now the list will be small enough that it can be printed.  </i></li><br><br>
+   </ul> 
+   
+  <li class="MsoNormal">Write a function called points().&nbsp; This function should:
+    <ul type="circle" style="margin-bottom: 0in">
+    <li class="MsoNormal">take in one parameter - a list of player data (this 
+    will be the data you &quot;loaded&quot; and &quot;cleaned&quot; using readData())</li>
+    <li class="MsoNormal">For each player in the data list you should create a 
+    list consisting of the points the player earned and the player's name)</li>
+    <li class="MsoNormal">Each of these lists should be appended to a separate 
+    list.</li>
+    <li class="MsoNormal">When you are done processing the input data you should 
+    return this new list of lists.</li>
+		<li>The function should look something like this:<br><br><img src="02.png"><br></li>
+  </ul>
+  </li>
+  <li class="MsoNormal">Write a function called main().&nbsp; This function 
+  should:
+    <ul type="circle" style="margin-bottom: 0in">
+    <li class="MsoNormal">take no parameters</li>
+    <li class="MsoNormal">invoke readData() to get the data about all of the 
+    players from our stat file</li>
+    <li class="MsoNormal">send the list returned by readData() to points()</li>
+    <li class="MsoNormal">sort the list returned by points() to identify and 
+    print information about the ten players from this data file who scored the most points during their careers.</li>
+		<li> The function should look something like this:<br><br><img src="03.png"><br></li>
+  </ul>
+  </li>
+</ol>
+<p style="margin-left:.5in">When you are all done you should be able to load and 
+invoke main() from the shell and get a response that looks like the 
+following:</p>
+<p style="margin-left:.5in"><img border=0 src="index.1.gif">
+</p>
+<p>&nbsp;</p>
+<p>Hint: If you would like the main() function to be run automatically when you press F5, add this to the bottom of your program:</p>
+<img src="04.png">
+<hr>
+<h3>Your Assignment, Part 2</h3>
+<ol start="1" type="1" style="margin-bottom: 0in">
+  <li class="MsoNormal">Write additional functions called minutes() and 
+  freethrows().&nbsp; These functions should work just like the points() function does.&nbsp; 
+  That is, they should take in the main data list, process each player in the 
+  list to make appropriate lists, and return a list of these lists.&nbsp; </li>
+  <li class="MsoNormal">You should also modify your main() method so 
+  that it prints the ten players with the largest number of <b>each</b> of these items.&nbsp; 
+  When I run this function I should see a long screen dump of the top 10 players 
+  in each of these three statistic categories:</li>
+</ol>
+<p style="margin-left:.5in"><img border=0 
+src="index.2.gif"></p>
+<p style="margin-left:.5in">&nbsp;</p>
+<hr>
+<h3>Your Assignment, Part 3 - The Efficiency Statistic</h3>
+<p>Each of the above statistics is interesting, but it only tells us how good a 
+player is at one specific statistic.&nbsp; How do many NBA coaches quickly evaluate a 
+player's overall game performance? They check his efficiency.&nbsp; This statistic is 
+something like the QB passer rating we calculated earlier in the course.&nbsp; It is 
+a calculation that tries to assign a number to how &quot;well&quot; a player played the 
+game.&nbsp; Higher numbers mean a better performance from that player.</p>
+<p>NBA.com evaluates all players based on the efficiency formula indicated below 
+(and shown on the aboutstats.htm page).&nbsp; In this project, we will follow this 
+efficiency formula. Since we are not evaluating a player based on one game, we 
+need to divide the total efficiency by the number of games the player played.&nbsp; 
+So the formula is:</p>
+<p><img border="0" width="636" height="64"
+		src="index_files/image003.jpg"></p>
+
+<p>The abbreviations on the right hand side of the equation correspond to the 
+fields in the statistics file.&nbsp; Again, you can check out the the meanings of 
+each of the abbreviations at:&nbsp;
+<a href="http://www.databasebasketball.com/about/aboutstats.htm" style="color: blue; text-decoration: underline; text-underline: single">
+http://www.databasebasketball.com/about/aboutstats.htm</a></p>
+<ol start="1" type="1" style="margin-bottom: 0in">
+  <li class="MsoNormal">Create a function called efficiency().&nbsp;&nbsp; This function 
+  should behave very similarly to the functions you wrote in parts 1 and 2 in 
+  that it should:
+  <ul type="circle" style="margin-bottom: 0in">
+    <li class="MsoNormal">take in one parameter - a list of player data (this 
+    will be the data you &quot;loaded&quot; and &quot;cleaned&quot; using readData())</li>
+    <li class="MsoNormal">For each player in the data list you should create a 
+    list consisting of the player's career long efficiency and the player's 
+    name)</li>
+    <li class="MsoNormal">Each of these lists should be appended to a separate 
+    list.</li>
+    <li class="MsoNormal">When you are done processing the input data you should 
+    return this new list of lists.</li>
+    <li class="MsoNormal">Now modify main() so that it uses this as it 
+    has the prior functions.</li>
+  </ul>
+  </li>
+</ol>
+<p><img border="0" src="index.3.gif">
+</p>
+<hr>
+<h3>Helpful Hints:</h3>
+<ol>
+  <li>Remember the split() function, which takes as an argument the character to 
+  split on, and returns a LIST of STRINGS</li>
+  <li>Pay attention to the type of data you are working with.&nbsp; Don't forget 
+  to convert Strings to numbers or vice versa as needed:</li>
+  <li>A 2-item list would be:<pre>	mylist = [x,y]</pre>
+  <p>To append this list to a list you can just say myList.append(mylist). Then 
+  to access the
+  different items in the list you index into the list twice, so for example if 
+  you appended the
+  above list as the first item in a list:<br>
+  myList[0][0] would return x<br>
+  myList[0][1] would return y</p><li>Since there are so many fields, do some testing (E.g. output some parsed 
+data) to
+make sure that you get the correct data.</li>
+
+  <li>The list sort function and reverse methods should be useful.<br>
+  <ul>
+  <li>
+<pre>myList = [ [3,2], [1,2], [2,5]]
+myList.sort() # myList will be [ [1,2], [2,5], [3,2]]
+myList.reverse() # myList will be [ [3,2], [2,5], [1,2]]</pre></li>
+  </ul>
+  </li>
+  </li>
+</ol>
+<hr>
+<h3>Final Submission</h3>
+	<p>Please upload your program and paragraphs to the program submission system.  The program is worth 25 points.  The program submission system will be running your main function and will give you more points for each top 10 list you are able to generate.</p>
+
+
+
+</body>
+
+</html>

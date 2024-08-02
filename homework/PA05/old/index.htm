@@ -1,0 +1,139 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Programming Assignment 5</title>
+
+</head>
+
+<body>
+
+<p align="center"><b>
+<span style="font-size: 18.0pt">Intro to Computer Science</span></b></p>
+
+<p align="center"><b>
+<span style="font-size: 18.0pt">PA05</span></b></p>
+
+<h3 ALIGN="center">A Game!</h3>
+<HR>
+<p align="center"> <strong>Code due October 3rd at 11:59pm</strong></p>
+<hr>
+<p><b>Points</b></p>
+<ul>
+<li> 25 points for program </li>
+</ul>
+<hr>
+<p ALIGN="left"><b>Introduction</b></p>
+<p>
+
+The game Rock, Paper, Scissors is a game is a simple game that two people can play to determine a winner
+ (see <a href="https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors"> this post</a>.) 
+Two players each, independently, select one of the three 
+hand gestures (Rock, Paper, or Scissors) and simultaneously reveal their selection as follows:
+<ul>
+	<li>Rock beats (bashes) scissors</li>
+	<li>Scissors beats (cuts) paper</li>
+    <li>Paper beats (covers) rock</li>
+</ul>
+If they select the same attack it is a tie.&nbsp; If they select different 
+attacks, than one of the two is a winner, based on the rules above.</p>
+
+
+Often, it is used as a method of selection similar to flipping a coin or 
+throwing dice to randomly select a person for some purpose. Of course, this game 
+is not truly random since a skilled player can often recognize and exploit the 
+non-random behavior of an opponent; for instance, if you notice that your 
+opponent chooses Rock most frequently, you may choose Paper (which beats 
+Rock) most often in an effort to win.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Original Program Specifications</b></p>
+<p class="MsoNormal">Your program (saved in a file called rps.py)&nbsp; will allow a human user to play several rounds 
+of Rock, Paper, Scissors with the computer.&nbsp; Each round of the game will have 
+the following structure:</p>
+<ul style="margin-top: 0in; margin-bottom: 0in" type="disc">
+  <li class="MsoNormal">The program will choose an attack (Rock, Paper, Scissors), but its choice will not be displayed until later so the user 
+  doesn’t see it.</li>
+  <li class="MsoNormal">The program will announce the beginning of the round and 
+  ask the user for his/her attack of choice<ul style="margin-top: 0in; margin-bottom: 0in" type="disc">
+    <li>The user can enter either of the three attacks or the signal to quit</li>
+    <li>If the user inputs something other than r, R, p, P, s, S, q or Q, the 
+    program should detect the invalid entry and ask the user to make another 
+    choice.</li>
+  </ul>
+  </li>
+  <li>If the user entered a attack :<ul style="margin-top: 0in; margin-bottom: 0in" type="disc">
+    <li>The two attacks will be compared to determine the winner (or a tie) and 
+    the results will be displayed by the program</li>
+    <li>The computer will keep score which will be displayed later.</li>
+    <li>The next round will begin, and the game will continue until the user 
+    chooses to quit</li>
+  </ul>
+  </li>
+  <li class="MsoNormal">If the user enters quit than the computer:<ul style="margin-top: 0in; margin-bottom: 0in" type="disc">
+    <li>Prints a goodbye message which should include a score of all of the 
+    games played</li>
+  </ul>
+  </li>
+</ul>
+<p>For example, one sample game might look like this:</p>
+<p><img border="0" src="index.1.gif" ></p>
+<p>&nbsp;</p>
+<p>For the initial version of this game you can program the computer to play 
+randomly.&nbsp; To do this you should put the following line of code at the top of your 
+program:</p>
+<blockquote>
+<pre>import random
+</pre>
+</blockquote>
+<p class="MsoNormal">This is the code necessary to set up a random number 
+generator.</p>
+<p class="MsoNormal">Each time you need to pick a random number you use:</p>
+<p class="MsoNormal">
+<blockquote>
+<pre>picked=random.choice(["r","p","s"])</pre>
+</blockquote>
+</p>
+<p></p>
+<p></p>
+<p class="MsoNormal">This will produce a string that is randomly either "r", "p", or "s".&nbsp; </p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Getting Started</b></p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="1" type="1">
+  <li class="MsoNormal">Do all the standard startup things. Create a new file 
+  called rps.py. Put your comments in at the top, save it.</li>
+  <li class="MsoNormal">Now you need to break the problem down into parts. Read 
+  the description and identify the subtasks that need to be solved. For example, 
+  one subtask would be to get proper user input. Create a design document and mark in the empty program, 
+  using comments, all the subtasks you need to solve.</li>
+  <li class="MsoNormal">Now address one subtask, getting user input. Do this in 
+  stages as well. Can you:
+  <ol style="margin-top: 0in; margin-bottom: 0in" start="1" type="a">
+    <li class="MsoNormal">Prompt for and get a choice (a string) from the user?</li>
+    <li class="MsoNormal">Once you can do that, can you repeatedly prompt for a 
+    character until you see a ‘q’ or ‘Q’ for quit?</li>
+    <li class="MsoNormal">Once you can do that, can you check for “legal” 
+    character responses from the user, and print an error message when an 
+    illegal response is given?</li>
+    <li class="MsoNormal">Next, can you check for legal responses that are in 
+    both upper and lower case?</li>
+  </ol>
+  </li>
+</ol>
+<p class="MsoNormal" style="margin-left:21.0pt">&nbsp;&nbsp; Once you can do all that, 
+move on to the next subtask.</p>
+<ol style="margin-top: 0in; margin-bottom: 0in" start="4" type="1">
+  <li class="MsoNormal">Remember, save the file and run it all the time! It will 
+  make debugging the program easier.</li>
+</ol>
+
+
+<b>Final Submission</b></p>
+<p>Use the Program Submission System to submit your code.</p>
+
+
+
+</body>
+</html>

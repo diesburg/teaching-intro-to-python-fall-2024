@@ -1,0 +1,12 @@
+Sarah Diesburg
+
+Design Document for program admit.py
+
+General Description: This program determines if a student can attend Whatsamatta U. based on ACT and GPA scores.
+
+Inputs: ACT exam score and high school GPA
+
+Calculation: Check that the student has at least 23 on the ACT and a GPA of at least 1.75.  If either score is too low, we print student cannot be admitted.
+
+Outputs: Prints message showing if student can be admitted
+
