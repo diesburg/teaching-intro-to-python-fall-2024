@@ -1,0 +1,92 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta charset="utf-8">
+<title>Programming Assignment</title>
+</head>
+
+<body>
+
+<p align="center"><b>
+<span style="font-size: 18.0pt">Intro to Computer Science</span></b></p>
+
+<p align="center"><b>
+<span style="font-size: 18.0pt">Homework #7</span></b></p>
+<h3 align="center">CSV Files!</h3>
+<HR>
+<p align="center"> <strong>Code due by Wednesday at 11:59:59pm<br>
+  <br>
+  Code may be submitted late at 10% penalty per day for 2 days.</strong></p>
+<hr>
+
+	<h3>Introduction</h3>
+	<p>My friend is a really big geography buff.  He loves statistics about the various states and countries.  Recently we were having an interesting discussion about which states were the most and least populous by size.  That got us interested in calculating various popluation densities.  For this assignment you will write the code to answer this question.
+    
+</p>
+	<hr>
+    
+<h3><strong>Specifics</strong></h3>
+<p>In a file called: <strong>hw07.py</strong></p>
+<p>Create a program that should:</p>
+<ul>
+	<li><b>Ask for two inputs:</b>
+    <ul>
+      <li>Ask for the name of the input file.</li>
+      <li>Ask for the name of the output file that your code will produce.</li>
+    </ul>
+  </li>
+	<li><b>Prints:</b>
+    <ul>
+      <li>Nothing</li>
+    </ul>
+  </li>
+	<li><b>Actions:</b>
+    <ul>
+      <li>Opens the input file</li>
+      <li>Opens the output file</li>
+      <li>Pulls off the header and adds one more column labeled &quot;Density&quot;</li>
+      <li>For each territory provided in the data file you opened:
+        <ul>
+          <li>extract population and size</li>
+          <li>calculate population density (people per square area)</li>
+          <li>writes the original data PLUS the population density into the output csv file</li>
+        </ul>
+      </li>
+      <li>Closes both files</li>
+    </ul>
+  </li>
+	<li><b>Data files to use:</b>
+    <ul>
+      <li><a href="SmallData.csv">SmallData.csv</a></li>
+      <li><a href="StateData.csv">StateData.csv</a></li>
+      <li><a href="CountryData.csv">CountryData.csv</a></li>
+    </ul>
+  </li>
+
+	<li><b>Example run of the program:</b><br><br>
+		<img src="run.png" width="40%"><br>
+		Note: This means I need to be able to OPEN whatever file name I want.  Do NOT hardcode "StateData.csv" into your open call.  Instead, ask for a file name with input (say input_filename), and then open it in your program like this:<br><br>
+		fin = open(input_filename,"r")<br><br></li>
+	<li><b>Example output using the StateData.csv input file:</b><br><br>
+    <img src="densityResult.png" width="438" height="329"><br><br>
+    
+  </li>
+	<li><b>Example output using the StateData.csv input file in a text editor:</b><br><br>
+		<img src="text.png"><br><br></li>
+	
+  <li>Finally, this program should just start to run when the program file is loaded.  <b>You do not need to use functions. </b> If you do want to use functions, put all of your code in a main() function like below to make sure it is run when the program file is loaded:<br><br>
+	<img src="main.png"><br><br></li>
+	
+	</ul>
+	<p>Hint: You may want to open the csv files with notepad or textedit to make sure things are right (e.g. you have commas where you need them, the data goes on multiple rows, etc.). </p>
+
+<hr><p>
+<b>Final Submission</b></p>
+<p>Use the program submission system to upload your code. </p>
+</body>
+
+</html>

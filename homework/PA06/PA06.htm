@@ -1,0 +1,164 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta charset="utf-8">
+
+<title>PA 07</title>
+<style>
+<!--
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	}
+p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+h2
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold}
+li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+h1
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold}
+-->
+</style>
+</head>
+
+<body>
+
+<h2 align="center" style="margin-top:0in;margin-right:.5in;
+margin-bottom:0in;margin-left:.5in;margin-bottom:.0001pt;text-align:center">
+Programming Assignment 6</h2>
+<h2 align="center" style="margin-top:0in;margin-right:.5in;
+margin-bottom:0in;margin-left:.5in;margin-bottom:.0001pt;text-align:center">A Pig Latin Translater<br>
+  <br>
+  <b><span style="font-size: 10.0pt">Objective:</span></b><span style="font-size: 10.0pt"> 
+  Get more practice with strings, looping, and writing functions</span></h2>
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.5in;
+margin-bottom:0in;margin-left:.5in;margin-bottom:.0001pt;text-align:center">&nbsp;</p>
+<HR>
+<p> <strong>The code is due by Wednesday at 11:59pm.<br>It can be turned in late up to 2 days late for a 10% penalty per day.</strong></p>
+</p>
+<hr>
+<h3>An introduction</h3>
+<p>You are contacted by Mr. I. Hoggs, president of the IPLS (International Pig 
+Latin Society).&nbsp; He admits that despite being president of the society, he 
+has always had some difficulty converting from English to Pig Latin.&nbsp; He asks if you could
+ help him by writing a program to convert words/sentences from English to traditional &quot;Pig Latin.&quot;&nbsp; </p>
+
+<h3>Pig Latin?</h3>
+<p>Some of you may have played with Pig Latin as a kid.&nbsp; There are many 
+slightly different rule sets for Pig 
+Latin.&nbsp;&nbsp; The version we will use is:</p>
+<ul>
+  <li>RULE 1 - If the word begins with a consonant - such as &quot;hello&quot; or &quot;this&quot; - divide 
+  the word at the first vowel, swapping the front and back parts of the word and 
+  append &quot;ay&quot; to the word. The previous 2 examples would produce &quot;ellohay&quot; and &quot;isthay&quot;.
+  </li>
+  <li>RULE 2 - If the word begins with a vowel - such as &quot;am&quot;, &quot;are&quot; or &quot;i&quot; - append &quot;way&quot; 
+  to the word. The previous examples would produce &quot;amway&quot;, &quot;areway&quot; and &quot;iway&quot;.
+  </li>
+  <li>RULE 3 - If the word has no vowels - such as &quot;my&quot; or &quot;thy&quot; - leave them alone. 
+  The examples would produce &quot;my&quot; and &quot;thy&quot;.</li>
+</ul>
+
+<h3>The Final Project</h3>
+<p>I want your code to take 
+in a single sentence (with no punctuation except the ending period) and 
+translate that sentence into pig latin.</p>
+<p>Let's think about this problem 
+from the top down.&nbsp; Our full blown project should:</p>
+<ol>
+  <li>Read a single &quot;sentence&quot; from the user.</li>
+  <li>Break the sentence into individual words</li>
+  <li>For each word, convert it into PigLatin...</li>
+  <li>by finding the first vowel (if it exists)</li>
+  <li>And finally, print out these converted words in normal sentence format</li>
+</ol>
+<p>As we look at this project, we want to do this in several manageable steps 
+(incremental development).</p>
+<hr>
+<h3>Part A - Finding the first vowel</h3>
+<p>Begin by writing&nbsp; a function (in a file called pa06.py) called findFirstVowel().&nbsp; This function should</p>
+<ul>
+  <li>Take in a single parameter which is assumed to be a single word</li>
+  <li>Search that word for the index location of the first vowel ('a', 'e', 'i', 'o', 'u').&nbsp;
+  </li>
+  <li>It then returns the index value of that first vowel, or a negative 
+  1 when there is no vowel.&nbsp;
+  </li>
+  <li>Make sure that this function works regardless of the case of the letters 
+  submitted</li>
+</ul>
+<p>For example, </p>
+<img border="0" src="index.5.gif" >
+<hr>
+<h3>Part B - Translating one word</h3>
+<p>Now, write <i><b>another</b></i> function called translateWord() that:</p>
+<ul>
+  <li>Takes in a single parameter which is assumed to be a single word</li>
+  <li>Sends that word to findFirstVowel()&nbsp; (from Part A) and grabs the 
+  result sent back</li>
+  <li>It uses the result 
+  of part A to see which of the three rules apply (see above)</li>
+  <li>It uses this 
+  information to modify the word appropriately, and returns the String representing the translated word.</li>
+</ul>
+  <p>For example, </p>
+  <p>
+  <img border="0" src="index.6.gif"></p>
+<hr>
+<h3>Part C - Starting to translate one sentence</h3>
+
+<p>Now add a function to your code called pigLatinTranslator().&nbsp; This function 
+should:</p>
+<ul>
+  <li>Accept a single parameter, assumed to be one sentence. 
+  <ul>
+    <li>You may assume there are no punctuation marks IN it (no commas, no 
+  hyphens, etc.). </li>
+    <li>You should assume that there is a period at the end of the sentence</li>
+  </ul>
+  </li>
+  <li>Removes the period from the sentence and changes all to lowercase letters</li>
+
+  <li>Breaks the sentence into individual words using split().&nbsp; </li>
+	<li>Uses the translateWord() function from part B to translate each word.</li>
+	</ul>
+	<p> You should put these translated words back together into a single sentence string.  Once you have done that, your function should:</p>
+  <ul>
+
+  <li>Capitalize the first letter.</li>
+  <li>Put the period back on the end.</li>
+  <li>RETURN the final output string (sentence)</li>
+</ul>
+For example, 
+<p><img border="0" src="index.8.gif"></p>
+<hr>
+<h3>Final Submission</h3>
+<p>Please submit your pa06.py file to the autolab Program Submission System.  It will be grading your code by running each function individually.  This means you will get some points for getting the first function to work, some points for getting the second function to work, and some more points for getting the last function to work.  However, please <strong>don't</strong> just submit things to the grading system before testing them on your end.  It would be a good idea for you to write a testing suite like we used in lab 8 to test your own function to make sure they work.</p>
+
+
+
+
+</body></html>

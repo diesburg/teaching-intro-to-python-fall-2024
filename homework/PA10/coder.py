@@ -11,7 +11,7 @@ def skip(c):
 
     #number
     elif "0"<=c<="9":
-        offset = ord(c)-40
+        offset = int(c)+2
 
     #anything else
     else:
