@@ -1,6 +1,32 @@
-Final Study Guide
+Final Study Guide (Programming Exam)
+------------------------------------
+- The programming exam will be closed book, closed notes during your lab time with the exception of a printout of both sides of the two-page reference help sheet.
 
-This second in-lab exam is cumulative but will focus on materials covered since the last exam.  To practice for the exam, please study the notes, materials, and readings posted on the class webpage.  You may also want to practice by writing code for and answering the following:
+- Practice coding without any help (except for the two-page reference help sheet) in IDLE from the final test bank. Do this to determine what you need to practice.  You want to spend no more than 15 minutes per problem on average.
+
+- This exam WILL NOT be autograded.  I will hand-grade all your submissions.  I will also give partial points for trying something, and the closer you get to the actual solution, the more points you will earn.
+
+- This also means that you must test your programs yourself and make sure they work.  (The autograder will not be there to test your programs.) 
+
+- Use the test bank of problems to study.
+
+- If you encounter a program that is hard on the exam, skip it to do the ones you know you can do.  Come back to the hard one when you have time at the end.
+
+- The test will take place on the last Thursday lab time before finals week.  If you cannot attend this time, you must let me know.
+
+
+
+Final Study Guide (Concepts Exam)
+---------------------------------
+- The concepts exam will be open-book, open-notes. (This means access to the zyBook and class websites are permitted.  Access to your own written or printed notes are permitted.  Going offsite to websites like StackOverflow, google, or AI are not permitted.)
+
+- You will not be able to use IDLE or Python to type in code and run it.  Instead, I want to see that you can read code and tell me what it does.
+
+- The exam will be TIMED TO 50 MINUTES during the final class period.  In the past, most people finish in a half hour.
+
+- If you cannot attend your final on finals week, please send me an email.
+
+- The final is cumulative but will focus on materials covered since the last exam.  To practice for the exam, please study the notes, materials, and readings posted on the class webpage.  You may also want to practice by writing code for and answering the following:
 
 Lists:
 	What are they?
@@ -31,30 +57,8 @@ Files:
 	How do you write to a file?
 	How/when do you open and close files?  Why?
 
-Sample list programs:
-	Write a function called negativeCopy(myList) which takes in a list of numbers as a parameter and returns a newly created list which is contains the negative values of the original list.  For example, For example, negativeCopy([ 1, -2, 3.5, 4.2, ]  ) would return [-1,  2, -3.5, -4.2]
-	Write a function called addList(myList, addend) which takes in a list of numbers and a single addend as parameters.  The function returns a newly created list which is each number in the original list plus the addend.  For example, addList([1,2,3.5,4.2] , 3) would return [4, 5, 6.5, 7.2]
-	Write a function called removeItem(myList,item) which takes in a list and an item and returns a new list with each occurrence of the item removed from the original list.  For example, removeItem([1, 2, "the", "test", 3, "is", "the", "best" ], "the") would return [1, 2, "test", 3, "is", "best" ]
-	Write a function called sumOf(myList) which takes in a list of numbers as a parameter and returns the sum of all of the values in the list.
-	Write a function called mean(myList) which takes in a list of numbers and returns a decimal value which is the mean (the statistical "average") of the numbers in the list.
-	Write a function called median(myList) which takes in a list of numbers and returns the value which is the arithmetic median of that list (the "middle" value when the list is sorted into order)
-	Write a function called mode(myList) which takes in a list of numbers and returns the value which occurs in the list the most times.
+- This list is not exhaustive.  Please do not forget about strings, loops, conditional statements, and other programming concepts you learned earlier in the class.
 
-Sample dictionary programs:
-	Write a fucntion called letterCounts(mystring) which takes in a string and returns a dictionary of letter counts in that string.
-	Write a function called mostCommonLetter(myString) which takes in a string and returns the most common letter in that string.
-	Write a function called mostCommonWord(myString) which takes in a string, lowercases the string, splits the string into words, and prints the most common word and how many times it occurs.
+- Don't forget the last two weeks of class and the searching/sorting information we learned.
 
-Sample set programs:
-	Write a function called commonLetters(name1,name2) that takes in the names of two people.  It then returns a list of the letters common to both names.
-	Write a function called boxOfCrayons(colors1,colors2) that takes in two lists of colors and returns the list of all the colors from the two lists.
-	Write a function called howFarAhead(student1,student2) that takes in two lists of courses completed by two students.  It should return a list of all of the courses that student1 has completed that student2 has NOT completed.
 
-Sample file programs:
-	Write a function called countLines(filename) that takes in the name of a file to open.  It then retuns the number of lines in the file.
-	Write a function called sensor(inFile, outFile, badWord) that takes in the name of a input file, the name of a new output file to create, and a word.  It should read the input file and create an identical output file except with all occurances of badWord replaced by ****.  (Note, you do not have to "clean" up words/punctuation.)
-	Write a function called countLetters(filename) that takes in the name of a file to open.  It then returns the count of all letters (both uppercase and lowercase) in the file.
-
-This list is not exhaustive.  Please do not forget about strings, loops, conditional statements, and other programming concepts you learned earlier in the class.
-
-In addition, you may bring one side of one page (8.5" x 11") of handwritten notes to assist you in the programming test!  Typed notes will not be acceptable because you will probably remember more when you write out notes: http://www.npr.org/2016/04/17/474525392/attention-students-put-your-laptops-away
