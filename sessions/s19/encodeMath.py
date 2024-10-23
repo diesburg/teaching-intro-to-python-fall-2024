@@ -13,7 +13,7 @@ encodedStr =""
 for char in inputStr:
 
     # Encoding case
-    if (ord(char) >= ord('a')) and (ord(char) <= ord('z')):
+    if char >= 'a' and char <= 'z':
         encodedOrdChar = ord(char) + rotation
 
         #Have we gone over our bounds?
